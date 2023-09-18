@@ -1,0 +1,85 @@
+.studentdetails
+{
+    flex:4;
+    padding: 20px;
+}
+
+.studentTitleConatiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.addstudent{
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    color: white;
+    padding: 5px;
+    border: none;
+    font-size: 16;
+}
+
+.studentContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.studentshow{
+    flex:1;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.studentupdate{
+    flex:2;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.studentshowtop{
+    display: flex;
+    align-items: center;
+}
+
+.studentshowimage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.studentshowtoptitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.studentshowstudentname{
+    font-weight: 550;
+}
+.studentshowstudenttitle{
+    font-weight: 300;
+}
+.studentshowbottom
+{
+    margin-top: 20px;
+}
+.studentshowTitle
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(175,170,170);
+}
+.studentinfoshow{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+}
+.studentshowfield{
+    font-weight: 500;
+    margin-right: 10px;
+}

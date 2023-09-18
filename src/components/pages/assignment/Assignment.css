@@ -1,0 +1,41 @@
+.assignments{
+    flex: 4;
+   
+    
+}
+
+.headings{
+   
+    
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.content{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 39px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.uploadedcontents{
+    gap: 30px;
+    padding-left: 40px;
+}
+
+.tablee{
+    
+    padding: 50px 120px;
+    text-align: center;
+    width: 1000px;
+    border-spacing: 20px;
+    height: 500px;
+}
