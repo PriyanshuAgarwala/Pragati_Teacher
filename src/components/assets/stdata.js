@@ -41,7 +41,7 @@ export const studentrows = [
       },
       {
         name: "Half Yearly",
-        Percentage: '84'
+        Percentage: '94'
       },
       {
         name: "Unit Test 3",
