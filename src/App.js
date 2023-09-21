@@ -16,12 +16,15 @@ import Calendar from "./components/pages/calendar/Calendar";
 import Teachertraining from "./components/pages/teachertraining/Teachertraining";
 import Timetable from "./components/pages/timetable/Timetable";
 import Feedback from "./components/pages/feedback/Feedback";
+import Signup from "./components/pages/signup/Signup";
 function App() {
   return (
     <>
     <Router>
         <Routes>
           <Route exact path="/" element= {<Loginpage/>}>  
+          </Route>
+          <Route exact path="/signup" element= {<Signup/>}>  
           </Route>
           <Route exact path="/home" element= {<Home/>}>  
           </Route>

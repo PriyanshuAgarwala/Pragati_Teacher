@@ -2,9 +2,8 @@ import React from 'react'
 import "./Loginpage.css"
 import u_icon from '../../assets/homepagee.png'
 import p_icon from '../../assets/front page.png'
-import email_icon from '../../assets/email.png'
-import password_icon from '../../assets/password.png'
 import { Link } from 'react-router-dom'
+import { Email, Lock } from '@mui/icons-material'
 
 export default function Loginpage() {
   return (
@@ -22,11 +21,11 @@ export default function Loginpage() {
         </div>
         <div className='logininputs'>
             <div className='logininput'>
-                <img src={email_icon} alt=""/>
+                <Email className='logininputicon'/>
                 <input type="email" placeholder='Email-Id'/>
             </div>
             <div className='logininput'>
-                <img src={password_icon} alt=""/>
+                <Lock className='logininputicon'/>
                 <input type="password" placeholder='Password'/>
             </div>
         </div>
@@ -34,8 +33,10 @@ export default function Loginpage() {
             <Link to="/home">
             <div className="loginsubmit" >Login</div>
             </Link>
-            
         </div>
+        <Link to="/signup">
+            <div className='loginsignup'>New user? Signup</div>
+            </Link>
     </div>
       
     </div>

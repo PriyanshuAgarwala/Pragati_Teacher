@@ -1,19 +1,19 @@
-.loginhomepage{
+.signuphomepage{
     position: relative;
 }
-.logintopimage{ 
+.signuptopimage{ 
     object-fit: fill;
     height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
 }
-.loginbottomimage{
+.signupbottomimage{
     height: 400px;
      left: 50px;
     position: absolute;
     top: 160px;
 }
-.loginwelcome{
+.signupwelcome{
     position: absolute;
     top:50px;
     color: orange;
@@ -22,21 +22,21 @@
     font-size: 40px;
     left: 270px;
 }
-.logintextlw{
+.signuptextlw{
     font-size: 44px;
     text-align: center;
     font-weight: bold;
 }
-.logincontainerlogin{
+.signupcontainerlogin{
     position: absolute;
     right: 30px;
     top: 90px;
-    height: 380px;
+    height: 450px;
     background-color: #CCD9BB;
     width: 420px;
     border-radius: 15px;
 }
-.loginheader{
+.signupheader{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,25 +45,25 @@
     margin-top: 20px;
 
 }
-.logintext{
+.signuptext{
     color: #284C4F;
     font-size: 23px;
     font-weight: 700;
 }
-.loginunderline{
+.signupunderline{
     width: 61px;
     height: 6px;
     background: #284C4F;
     border-radius: 9px;
 }
 
-.logininputs{
+.signupinputs{
     margin-top: 35px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.logininput{
+.signupinput{
     display: flex;
     align-items: center;
     margin: auto;
@@ -72,12 +72,17 @@
     background: #eaeaea;
     border-radius: 6px;
 }
-.logininputicon{
+.signupinputicon{
     margin: 0px 30px;
     width: 25px;
     height: 25px;
 }
-.logininput input{
+.signupinput img{
+    margin: 0px 30px;
+    width: 25px;
+    height: 25px;
+}
+.signupinput input{
     height: 50px;
     width: 300px;
     background: transparent;
@@ -86,16 +91,16 @@
     color: #797979;
     font-size: 19px;
 }
-.loginsubmit-container{
+.signupsubmit-container{
     display: flex;
     gap: 15px;
-    margin-top: 45px ;
-    margin-left : 100px;
+    margin-top: 45px; 
+    margin-left: 100px;
     margin-right: 100px;
     
 
 }
-.loginsubmit{
+.signupsubmit{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +113,7 @@
     font-weight: 700;
     cursor: pointer;
 }
-.loginsignup{
+.signuplogin{
     display: flex;
     margin-top: 10px;
     margin-left: 150px;
