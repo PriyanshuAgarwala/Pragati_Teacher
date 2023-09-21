@@ -10,14 +10,27 @@ import Attendance from "./components/pages/attendance/Attendance";
 import Attendancegraph from "./components/pages/attendancegraph/Attendancegraph";
 import Result from "./components/pages/result/Result"; 
 import Resultgraph from "./components/pages/resultgraph/Resultgraph";
-import React from "react"; 
+import React, { useEffect, useState } from "react"; 
 import Loginpage from "./components/pages/login/Loginpage";
 import Calendar from "./components/pages/calendar/Calendar";
 import Teachertraining from "./components/pages/teachertraining/Teachertraining";
 import Timetable from "./components/pages/timetable/Timetable";
 import Feedback from "./components/pages/feedback/Feedback";
 import Signup from "./components/pages/signup/Signup";
+import {auth} from "./components/Firebase"
+
 function App() {
+
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName);
+      } else setUserName("");
+    });
+  }, []);
+
   return (
     <>
     <Router>
@@ -30,7 +43,7 @@ function App() {
           </Route>
           <Route path="/students" element={
           <>
-          <Topbar/>
+          <Topbar name={userName}/>
            <div className='conatinerhome'>
             <Sidebar/>
              <Student/>
@@ -39,7 +52,7 @@ function App() {
           </Route>
           <Route path="/assignment" element={
           <>
-          <Topbar/>
+          <Topbar name={userName}/>
            <div className='conatinerhome'>
             <Sidebar/>
             <Assignment/>
@@ -48,7 +61,7 @@ function App() {
           </Route>
           <Route path="/students/:studentId" element={
               <>
-              <Topbar/>
+              <Topbar name={userName}/>
                <div className='conatinerhome'>
                 <Sidebar/>
                 <Studentdetails/>
@@ -57,7 +70,7 @@ function App() {
           </Route>
           <Route path="/attendance" element={
           <>
-          <Topbar/>
+          <Topbar name={userName}/>
            <div className='conatinerhome'>
             <Sidebar/>
             <Attendance/>
@@ -66,7 +79,7 @@ function App() {
           </Route>
           <Route path="/attendance/:stdId" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Attendancegraph/>
@@ -75,7 +88,7 @@ function App() {
           </Route>
           <Route path="/results" element={
           <>
-          <Topbar/>
+          <Topbar name={userName}/>
            <div className='conatinerhome'>
             <Sidebar/>
             <Result/>
@@ -84,7 +97,7 @@ function App() {
           </Route>
           <Route path="/results/:stdId" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Resultgraph/>
@@ -93,7 +106,7 @@ function App() {
           </Route>
           <Route path="/calendar" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Calendar/>
@@ -102,7 +115,7 @@ function App() {
           </Route>
           <Route path="/teacherstraining" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Teachertraining/>
@@ -111,7 +124,7 @@ function App() {
           </Route>
           <Route path="/timetable" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Timetable/>
@@ -120,7 +133,7 @@ function App() {
           </Route>
           <Route path="/feedback" element={
            <>
-           <Topbar/>
+           <Topbar name={userName}/>
             <div className='conatinerhome'>
              <Sidebar/>
              <Feedback/>

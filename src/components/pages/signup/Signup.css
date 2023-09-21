@@ -94,7 +94,7 @@
 .signupsubmit-container{
     display: flex;
     gap: 15px;
-    margin-top: 45px; 
+    margin-top: 35px; 
     margin-left: 100px;
     margin-right: 100px;
     
@@ -118,4 +118,13 @@
     margin-top: 10px;
     margin-left: 150px;
     margin-right: 100px;
+}
+.errormsg{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ff3300;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 30px;
+    align-self: center;
 }

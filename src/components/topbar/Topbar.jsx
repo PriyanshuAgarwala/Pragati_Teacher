@@ -2,7 +2,7 @@ import React from 'react'
 import "./Topbar.css"
 import {Notifications, Language} from "@mui/icons-material";
 import user_icon from "../assets/user_icon.png";
-export default function Topbar() {
+export default function Topbar(props) {
   return (
     <div className='topbar'>
       <div className='topbarWrapper'>
@@ -17,6 +17,7 @@ export default function Topbar() {
             <div className='topbarIconContainer'>
             <Language/>
             </div>
+            {props.name}
            <img src={user_icon} alt='' className='topavatar'></img>
         </div>
       </div>

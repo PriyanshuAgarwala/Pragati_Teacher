@@ -18,13 +18,14 @@ export default function Feedback() {
         <hr className='horizontalline'/>
         <table className='reviewtable'>
           <tr className='reviewrows'>
-            <AccountCircle/>
-            <Star/> <Star/> <Star/> <Star/> <StarOutline/>
-            The teaching style is really good, would be better if more time is given to certain topics</tr>
+            <div className='reviewerdetails'>
+            <AccountCircle className='userreview'/> Anonymus</div>
+            <div className='ratingfrmuser'><Star/> <Star/> <Star/> <Star/> <StarOutline/></div>
+            <div className='userreviewtext'>The teaching style is really good, would be better if more time is given to certain topics</div></tr>
             <tr className='reviewrows'>
-            <AccountCircle/>
-            <Star/> <Star/> <Star/> <Star/> <Star/>
-            Topics are explained really well.</tr>
+            <AccountCircle className='userreview'/>Anonymus
+            <div className='ratingfrmuser'><Star/> <Star/> <Star/> <Star/> <Star/></div>
+            <div className='userreviewtext'>Topics are explained really well.</div></tr>
         </table>
         </div> 
     </div>
