@@ -1,0 +1,44 @@
+.feedback{
+    flex:4;
+}
+.hedaingfeedback{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 29px;
+    font-weight: bold;
+}
+.overallrating{
+    padding-top: 40px ;
+    padding-left: 30px;
+}
+.ratingvalue{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 40px;
+}
+.ratingimage{
+    height: 50px;
+    width: 200px;
+}
+.reviewsheading{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.horizontalline{
+    
+    background-color: lightgray;
+    height: 1px;
+    border-color: lightgray;
+}
+
+.reviewtable{
+    width: 100%;
+    background-color: lightcyan;
+}
+.reviewrows{
+    padding-top: 5px;
+    height: 92px;
+}

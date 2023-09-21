@@ -1,0 +1,47 @@
+.teachertraining{
+    flex:4;
+}
+.topcomponentstt{
+    display: flex;
+    gap: 50px;
+    padding: 20px 30px;
+}
+.bottomcomponentstt{
+    display: flex;
+    gap: 60px;
+    padding: 10px 20px;
+}
+.coursestt{
+    
+    width: 450px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: beige;
+}
+.resourcestt{
+    
+    width: 400px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(168, 184, 142);
+
+}
+.anouncementstt{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 500px;
+    height: 150px;
+    background-color: rgb(174, 157, 135);
+}
+.importantlinkstt{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 350px;
+    height: 150px;
+    background-color: rgb(140, 140, 166);
+}
+.headingtt{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-top: 5px;
+    font-weight: bold;
+}
